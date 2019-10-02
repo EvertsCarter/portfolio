@@ -59,7 +59,7 @@ body{
     position: absolute;
     width: 25%;
     margin: 3rem;
-    top: 250px;
+    top: 350px;
     right: 575px;
     padding: 0px;
     border-width: 10px;
@@ -73,7 +73,7 @@ body{
     position: absolute;
     width: 25%;
     margin: 3rem;
-    top: 245px;
+    top: 350px;
     right: 300px;
     padding: 0px;
     border-width: 10px;
@@ -83,15 +83,15 @@ body{
 
 }
 
-.box {
+.boxindex {
     position: absolute;
-    width: 20%;
+    width: 80%;
     margin: 1rem;
     top:200px;
-    right: 600px;
+    right:75px;
     padding: 0.5rem;
     color: #FFF;
-    font-size: .9rem;
+    font-size: 1.0rem;
     font-weight: bold;
     text-align: center;
     border-width: 10px;
@@ -101,15 +101,34 @@ body{
     background-color: #414141;
 }
 
-.boxdeepthoughts {
+.boxprojects {
     position: absolute;
-    width: 20%;
+    width: 80%;
     margin: 1rem;
     top:200px;
-    right: 600px;
+    right: 100px;
     padding: 0.5rem;
     color: #FFF;
-    font-size: .9rem;
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align: center;
+    border-width: 10px;
+    border-radius: 15px;
+    border-color: black;
+    border-style: ridge;
+    background-color: #414141;
+}
+
+
+.boxdeepthoughts {
+    position: absolute;
+    width: 60%;
+    margin: 1rem;
+    top:200px;
+    right: 300px;
+    padding: 0.5rem;
+    color: #FFF;
+    font-size: 1.0rem;
     font-weight: bold;
     text-align: center;
     border-width: 10px;
@@ -121,13 +140,13 @@ body{
 
 .boxaboutme {
     position: absolute;
-    width: 20%;
+    width: 60%;
     margin: 1rem;
     top:200px;
-    right: 600px;
+    right: 300px;
     padding: 0.5rem;
     color: #FFF;
-    font-size: .9rem;
+    font-size: 1.0rem;
     font-weight: bold;
     text-align: center;
     border-width: 10px;
@@ -136,4 +155,5 @@ body{
     border-style: ridge;
     background-color: #414141;
 }
+
 
