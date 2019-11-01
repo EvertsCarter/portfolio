@@ -26,19 +26,13 @@ function draw()
   var xpos = 0; 
   var ypos = 0;
   
-  for(let i=0; i<=3; i++){
+  for(let i=0; i<3; i++){
     for( let k=0; k<9; k++){
         die[i]=new Die (xpos, ypos);
         die[i].show();
         die[i].roll();
         xpos+=55;
         total+=die[i].getRand();
-        /*
-        die[i] = new Die(xpos, ypos);
-        xpos+=55;
-        die[i].show();
-        total+=die[i].getRand();
-        */
     }
     xpos=0;
     ypos+=55;
@@ -61,6 +55,7 @@ if(total>hs){
   text("Number of 5's: " + num5, 200, 475);
   text("Number of 6's: " + num6, 350, 475);
   
+    
      num1 = 0;
      num2 = 0;
      num3 = 0;
@@ -68,6 +63,7 @@ if(total>hs){
      num5 = 0;
      num6 = 0;
      mp=1;
+     
 
 }
 function mousePressed()
