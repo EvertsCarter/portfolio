@@ -32,14 +32,4 @@ class Bacteria{
     fill(0, (int)(Math.random()*255)+25, 255);
     ellipse(x, y, (int)(Math.random()*15)+10, (int)(Math.random()*15)+10); 
   }
-  
-  /*
-  public void target(){
-    int time=millis()-timer;
-   if(  time>5000  && time<10000){
-     fill(255, 0, 0);
-    ellipse((int)(Math.random()*500)+10, (int)(Math.random()*500)+10, 15, 15);
-   }
-   
-   */
   }
