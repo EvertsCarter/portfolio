@@ -1,5 +1,5 @@
 //Varaibles
-  ArrayList <Circle> myCircles=new ArrayList<Circle>();
+  //ArrayList <Circle> myCircles=new ArrayList<Circle>();
   int xPos1 = 0;
   int yPos1 = 0;
   int xPos2 = 500;
@@ -10,7 +10,11 @@
   int mb2L= 700;
   int mb1W= 25;
   int count=0;
-
+  boolean lost = false;
+  boolean started = false;
+  Circle myCircle = new Circle();
+  
+  
   //Setup Background
 public void setup() {
   size(1200, 700);
@@ -19,12 +23,14 @@ public void setup() {
 //Basically the runner class
 public void draw(){
   //Sets up backgroud and paddles
+  if(lost == false){
   background(0, 0, 0);
   makeBoarders1();
   makeBoarders2();
   makeBoarders3();
   makeRect();
-  
+  if(started)
+    myCircle.display();
   //Displays score
   fill(255, 255, 255);
   text("SCORE: " + count, 1100, 25);
@@ -33,9 +39,9 @@ public void draw(){
   movePlayer();
   
   //Spawns in Circles
-   for (int i=0; i<myCircles.size(); i++) {
-    myCircles.get(i).display();
+  
   }
+ 
 }
 
 //Makes boarders
@@ -72,15 +78,18 @@ public void movePlayer(){
 }
 
 public void mousePressed() {
-  myCircles.add(new Circle());
+  myCircle.display();
+  println(x);
+  started = true;
+  //myCircles.add(new Circle());
 }
 
 public class Circle {
   float x;
   float y;
-  float xspeed=random(6, 10);
-  float yspeed=random(7, 10);
-  float velocity=.05;
+  float xspeed=random(10, 15);
+  float yspeed=random(10, 15);
+  float velocity=.09;
 
 //Sets the ball to spawn at mouse click
   Circle() {
@@ -99,7 +108,7 @@ public class Circle {
       xspeed+=velocity;
       xspeed*=-1;
       count++;
-    } else if (x<25 && y<mb2L) {
+    } else if (x<24 && y<mb2L) {
       xspeed+=velocity;
       xspeed*=-1;
       count++;
@@ -110,7 +119,8 @@ public class Circle {
       yspeed+=velocity;
       yspeed*=-1;
       count++;
-    }else if(y>mb1L && y>mb2L){
+    }else if(y>mb1L+50 && y>mb2L+50){
+      lost = true;
       text("     YOU LOSE \n YOUR SCORE: " + count, 600, 350);
     }
   }
