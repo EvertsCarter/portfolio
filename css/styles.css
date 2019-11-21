@@ -98,6 +98,28 @@ body{
     font-size:1.5rem;
 }
 
+
+.lightningBox{
+    position: absolute;
+    width: 33.6%;
+    margin: 1rem;
+    top:300px;
+    right:75px;
+    padding: 0.5rem;
+    color: #FFF;
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align: left;
+    border-width: 10px;
+    border-radius: 15px;
+    border-color: black;
+    border-style: ridge;
+    background-color: #414141;
+    
+}
+
+
+
 .dice{
     position: absolute;
     top: 425px;
@@ -105,11 +127,73 @@ body{
     font-size:1.5rem;
 }
 
+.diceBox{
+    position: absolute;
+    width: 33.6%;
+    margin: 1rem;
+    top:300px;
+    right:75px;
+    padding: 0.5rem;
+    color: #FFF;
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align: left;
+    border-width: 10px;
+    border-radius: 15px;
+    border-color: black;
+    border-style: ridge;
+    background-color: #414141;    
+}
+
 .chemotaxis{
     position: absolute;
     top: 450px;
     right: 250px;
     font-size:1.5rem;
+}
+
+.chemotaxisBox{
+
+    position: absolute;
+    width: 33.6%;
+    margin: 1rem;
+    top:300px;
+    right:75px;
+    padding: 0.5rem;
+    color: #FFF;
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align: left;
+    border-width: 10px;
+    border-radius: 15px;
+    border-color: black;
+    border-style: ridge;
+    background-color: #414141;    
+}
+
+.starfield{
+    position: absolute;
+    top: 475px;
+    right: 250px;
+    font-size:1.5rem;
+}
+
+.starfieldBox{
+    position: absolute;
+    width: 33.6%;
+    margin: 1rem;
+    top:300px;
+    right:75px;
+    padding: 0.5rem;
+    color: #FFF;
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align: left;
+    border-width: 10px;
+    border-radius: 15px;
+    border-color: black;
+    border-style: ridge;
+    background-color: #414141;    
 }
 
 .boxindex {
@@ -134,7 +218,7 @@ body{
     position: absolute;
     width: 80%;
     margin: 1rem;
-    top:200px;
+    top:175px;
     right: 100px;
     padding: 0.5rem;
     color: #FFF;
@@ -147,7 +231,6 @@ body{
     border-style: ridge;
     background-color: #414141;
 }
-
 
 .boxdeepthoughts {
     position: absolute;
@@ -186,3 +269,67 @@ body{
 }
 
 
+
+
+.flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    border: .5px solid #42352c;
+}
+
+.child0 {
+    flex-basis: 20%;
+    padding: 1rem;
+    height: 10%;
+
+    margin-top: 10%;
+    color: #FFF;
+    font-weight: bold;
+    text-align: left;
+    border-width: 10px;
+    border-radius: 10px;
+    border-color: orangered;
+    border-style: dotted;
+    background-color: #414141;
+    font-size: 138px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.child1 {
+    flex-basis: 20%;
+    height: 10%;
+    margin: auto;
+    padding:0px;
+
+    border-color: gray;
+    background-color: gray;
+    border-width: 1px;
+    border-radius: 1px;
+    border-style: ridge;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+
+
+}
+
+.child2 {
+    flex-basis: 40%;
+    padding: 1rem;
+    height: 10%;
+    margin: .5%;
+
+    color: #FFF;
+    font-weight: bold;
+    text-align: left;
+    border-width: 10px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: groove;
+    background-color: #414141;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+}

@@ -11,7 +11,8 @@ var targetPos;
   
  function setup()   
  {     
-   createCanvas(500, 500);
+   var canvas = createCanvas(500, 500);
+    canvas.parent('sketch-div');
    b = [];
    for(var i=0; i<20; i++){
      b[i]= new Bacteria(width/2, height/2);
