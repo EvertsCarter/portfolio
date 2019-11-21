@@ -9,8 +9,8 @@ function setup(){
   var canvas = createCanvas(500, 500);
     canvas.parent('sketch-div');
   for(var i=0; i<1000; i++){
-    p[1] = new oddballParticle(width/2, height/2);
-    p[2] = new JumboParticle(width/2, height/2);
+    p[0] = new oddballParticle(width/2, height/2);
+    p[1] = new JumboParticle(width/2, height/2);
     p[i] = new normalParticle(width/2, height/2);
   }  
 }
