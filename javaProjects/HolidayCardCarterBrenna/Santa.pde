@@ -6,7 +6,7 @@ class Santa implements Eggnog{
     this.y = y;
   }
   void move(){
-    x++;
+    x+=5;
   }
   
   void show(){
