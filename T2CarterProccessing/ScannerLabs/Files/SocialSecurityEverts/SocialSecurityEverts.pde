@@ -20,18 +20,19 @@ public class Social
   }
 
   public int getSum()
-  {
-    int total = 0;
-    Scanner scan = new Scanner(socialNum);
+  { 
+    int sum = 0;
+    int num =0;
+    Scanner scan = new Scanner(socialNum).useDelimiter("-");
     while(scan.hasNext()){
-      scan.useDelimiter("-");
-      total += scan.nextInt();
+      num = scan.nextInt();
+      sum += num;
     }
-    return total;
+    return sum;
   }
 
   public String toString()
   {
-    return socialNum + "\n" + getSum() + "\n\n";
+    return "SS# " + socialNum + " has a sum of " +  getSum();
   }
 }

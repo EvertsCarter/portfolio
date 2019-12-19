@@ -5,18 +5,20 @@ import static java.lang.System.*;
 
 void setup(){
   try{
-    Scanner file = new Scanner(new File("Desktop/T2CarterProccessing/ScannerLabs/Files/SocialSecurityEverts/socialsecurity.txt"));
+    Scanner file = new Scanner(new File("Desktop/T2CarterProccessing/ScannerLabs/Files/BoxEverts/box.txt"));
     int size = file.nextInt();
     file.nextLine();
     for(int i=0; i<size; i++)
     {
        String num = file.nextLine();
-       Social oe = new Social(num);
+       Box oe = new Box(num);
        println(oe);
     } 
   }
   
   catch(Exception e){
     println(e);
+    
   }
+  
 }
