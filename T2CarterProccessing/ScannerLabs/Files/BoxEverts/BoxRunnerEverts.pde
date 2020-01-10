@@ -10,8 +10,9 @@ void setup(){
     file.nextLine();
     for(int i=0; i<size; i++)
     {
-       String num = file.nextLine();
-       Box oe = new Box(num);
+       String x = file.next();
+       int y = file.nextInt();
+       Box oe = new Box(x, y);
        println(oe);
     } 
   }
