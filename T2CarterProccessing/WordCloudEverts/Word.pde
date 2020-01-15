@@ -10,8 +10,16 @@ public class Word{
     count=0;
   }
   
-  public String getWord(){ return name; }
-  public void setWord(String x){ name=x; }
-  public void setCount(int i){ count=i; }
-  public int getCount(){ return count; }
+  public String getWord(){
+  return name; 
+}
+  public void setWord(String x){
+  name=x;
+}
+  public void setCount(int i){
+  count=i; 
+}
+  public int getCount(){
+  return count; 
+}
 }
