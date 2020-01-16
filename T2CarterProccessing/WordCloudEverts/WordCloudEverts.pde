@@ -1,14 +1,13 @@
 String fileContents [];
 String rawText;
 String [] tokens;
-int rand;
-int randx;
-int randy;
+int flash = 0;
 WordList wList;
 StringParser parser;
 
   
 void setup() {
+  frameRate(100);
   size(500, 500);
   fileContents=loadStrings("Desktop/T2CarterProccessing/WordCloudEverts/Heart.txt");
   rawText = join(fileContents, " ");
@@ -22,14 +21,11 @@ void setup() {
   println("Syllables: " + parser.countSyllables());
   println("Sentences: " + parser.countSentences());
   
-  rand = (int)(Math.random()*tokens.length);
-  randx = (int)(Math.random()*400);
-  randy = (int)(Math.random()*400);
 }
 
 void draw(){
   background(0);
-  fill(200, 200, 200);
+  fill(200, 0, 0);
   rect(0, 350, 225, 400);
   fill(0);
   textSize(25);
@@ -38,15 +34,14 @@ void draw(){
   text("Syllables: " + parser.countSyllables(), 15, 445);
   text("Sentences: " + parser.countSentences(), 15, 475);
   
-  for(int i=0;i<tokens.length; i++){
-    print(wList.getWord(i) + " ");
-    
+  fill(255);
+  text("A Tell Tale Heart", 130, 75);
+  text("By Edgar Allen Poe", 125, 125);
+  text(wList.getName(flash), 200, 200);
+  
+  flash++;
+  if(flash >2156){
+    flash=0;
   }
-  
-  
-  //for(int i=0; i<tokens.length; i++){
-  //text(wList.getWord(rand), randx, randy);
-  //}
-  
-  
+   
 }

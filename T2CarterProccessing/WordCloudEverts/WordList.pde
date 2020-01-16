@@ -4,15 +4,14 @@ public List<Word> myList;
 
   public WordList(String []tokens) {
     
-    myList=new ArrayList<Word>();
+    myList = new ArrayList<Word>();
     for (String s : tokens) {
       myList.add(new Word(s));
     }
-    
   }
   
-  public String getWord(int i){
-  return myList.get(i).getWord();
+  public String getName(int i){
+  return myList.get(i).getName();
   }
   
 }
