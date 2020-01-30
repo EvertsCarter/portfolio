@@ -35,9 +35,11 @@ void draw(){
   text("Sentences: " + parser.countSentences(), 15, 475);
   
   fill(255);
-  text("A Tell Tale Heart", 130, 75);
-  text("By Edgar Allen Poe", 125, 125);
-  text(wList.getName(flash), 200, 200);
+  textAlign(CENTER);
+  text("A Tell Tale Heart", width/2, 75);
+  text("By Edgar Allen Poe", width/2, 125);
+  text(wList.getName(flash), width/2, 200);
+  textAlign(LEFT);
   
   flash++;
   if(flash >2156){
