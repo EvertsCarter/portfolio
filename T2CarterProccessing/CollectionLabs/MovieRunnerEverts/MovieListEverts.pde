@@ -1,3 +1,5 @@
+ import java.util.ListIterator;
+ 
  public class MovieList{
   private ArrayList <Movie> MovieList;
   private int count;
@@ -13,9 +15,8 @@
   public int getAverageScore(){
     int avg=0;
     int count = 0;
-    for(int i: MovieList){
-      //avg+=i.getRating()
-      avg+= MovieList.get(i).getRating();
+    for(Movie i: MovieList){
+      avg+=i.getRating();
       count++;
     }
     return avg/count;
@@ -39,10 +40,11 @@
   }
   
   public String toString(){
-    Iterator<Movie> it = MovieList.Iterator();
+    ListIterator<Movie> it = MovieList.listIterator();
     while(it.hasNext()){
       println(it.next());
     }
+    return MovieList.toString() ;
   }
   
 }
