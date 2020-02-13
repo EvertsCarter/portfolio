@@ -13,7 +13,7 @@ int up = 0;
 
 void setup(){
   frameRate(1);
-  size(1500,500);
+  size(1500,250);
   
   try{
     Scanner file = new Scanner(new File("Desktop/T2CarterProccessing/CollectionLabs/MovieRunnerEverts/Movie.txt"));
