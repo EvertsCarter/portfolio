@@ -39,8 +39,7 @@ void draw(){
   text("Word: " + myList.get(up).getWord(), 10, 75);
   text("Word Match : " + myList.get(up).check(), 10, 100);
   text("Word Count: " + myList.get(up).total(), 10, 125);
-  rect(1, 150, myList.get(up).total()*4, 25);
-  
+
   up++;
   if(up >= 8529){
     up=0;
