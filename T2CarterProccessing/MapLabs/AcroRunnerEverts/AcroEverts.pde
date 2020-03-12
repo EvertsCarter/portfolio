@@ -31,7 +31,7 @@ public class Acronyms
       if(acronymTable.containsKey(temp)){
         temp = acronymTable.get(temp);
       }
-      output += temp + " ";  
+      output += temp + " ";
     }
     return output;
   }
